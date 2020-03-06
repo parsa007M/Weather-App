@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Weather App - JavaScript</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css"></link>
+   
+
+</head>
+<body>
+
+    <!-- App Container -->
+    <div class="container">
+
+        <!-- App Title -->
+        <div class="app-title">
+            <p>Weather</p>
+        </div>
+
+        <!-- Notifications for Error Messages -->
+        <div class="notification"> </div>
+
+        <!--Real Weather Container -->
+        <div class="weather-container">
+
+            <!-- As a default, it will show unkown image, if we can not access the location -->
+            <div class="weather-icon">
+                <img src="icons/unknown.png" alt="">
+            </div>
+
+            <!-- Show the temperature here -->
+            <div class="temperature-value">
+                <p> - °<span>C</span></p>
+            </div>
+
+            <!-- Temperature description(rainy, sunny...etc) will be here -->
+            <div class="temperature-description">
+                <p> - </p>
+            </div>
+
+            <!-- Location info -->
+            <div class="location">
+                <p> - </p>
+            </div>
+
+            <!-- Status info -->
+            <div class="status">
+                <p> - </p>
+            </div>
+
+        </div>
+
+        <div id="wheater-video">
+            <video src="videos/Rain.mp4" autoplay muted loop id="myVideo" type="video/mp4">
+        </div>
+
+    </div>
+    
+    <!-- Add your JS file -->
+    <script src="app.js"></script>
+</body>
+</html>
